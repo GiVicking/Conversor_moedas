@@ -1,0 +1,128 @@
+﻿
+body{ 
+  background: #333;
+}
+
+h1,h2,h3{
+ font-family:  verdana, tahoma ;
+ color: #aaa;
+
+}
+section{
+  background: url(./gendolf.jpeg);
+  background-repeat: no-repeat;
+  background-size:60rem;
+  background-position-x: center;
+  font-family: Arial;
+  padding: 10rem ;
+
+}
+.container{
+  background: linear-gradient(
+      to bottom right,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5), -1px -1px 2px #aaa, 1px 1px 2px #555;
+  backdrop-filter: blur(0.8rem);
+  padding: 1.5rem;
+  margin-right: 15rem;
+  margin-left: 10rem;
+  border-radius: 1rem;
+  animation: 1s cubic-bezier(0.16, 1, 0.3, 1) cardEnter;
+  }
+  
+  .subtitle{
+  margin-top: 0.8rem;
+  }
+  
+  .select, .valor{
+  background:none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  
+  .botao{
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  background: none;
+  margin-top: 1.5rem;
+  padding: 5px 10px;
+  }
+  
+  .select, .valor, .botao:focus{
+  outline: none;
+  }
+  
+  @keyframes cardEnter{
+  from{
+      transform: translateY(100vh);
+      opacity: 0.1;
+  }
+  to{
+      transform: translateY(0);
+      opacity: 1;
+  }
+  }
+   
+
+footer{
+  background-color:#CCCCCC;
+  color: #333;
+  font-family: cursive;
+  text-align: center;
+  padding: 0.1rem 0.2rem 0rem 0.1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer p{
+  margin-top: 0;
+  margin-right: 20rem;
+  margin-left: 0;
+  
+  padding: 1rem 0.1rem 1rem 00.1rem;
+}
+@media all and (min-width:1000px){
+  body{
+      width: 1000px;
+      margin:auto;
+  }
+}
+
+@media all and (max-width:600px){
+  section{
+    background: url(./gendolf.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: Arial;
+    padding: 3rem;
+   
+  }
+  .container{
+    background-color:transparent;
+  padding: 1.5rem 1.5rem  1.5rem 1.5rem;
+  margin-top: 5rem;
+  margin-right: 1rem;
+  margin-left: 1.2rem;
+
+  }
+  footer{
+    padding: 0;
+    margin: 0;
+    }
+  footer p{
+    display:flex;
+    font-size: 0.7rem;
+    margin:0;
+    padding:1rem 0.5rem 0rem 0.5rem;
+  }
+  footer img{
+    width: 3rem;
+    height: 3rem;
+  }
+ 
+}
+
+
+
